@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Contact book</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <img src="./images/icon_telefone.png" alt="telefone">
+            <h1>Register contacts</h1>
+        </header>
+        <form id="form_contact">
+            <input type="text" id="contact_name" required placeholder="Contact's name">
+            <input type="tel" id="contact_number" required placeholder="+55 Number">
+            <button type="submit">+ Register</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Profile</th>
+                    <th>Contact name</th>
+                    <th>Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total contacts: </td>
+                    <td id="total_contact">---</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
