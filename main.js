@@ -7,14 +7,18 @@ let linhas = ''
 
 form.addEventListener('submit', function(e) {
     e.preventDefault()
-    addContact()
-    updateTable()
-    updateTotal()
+    if ((inputContactNumber.value.length >= 11)&&(inputContactNumber.value.length <= 12)) {
+        addContact()
+        updateTable()
+        updateTotal()
+    } else {
+        alert('Exceeding/insufficient of numbers')
+    }
 })
 
 function addContact() {
     if ((contactName.includes(inputContactName.value))||(contactNumber.includes(inputContactNumber.value))) {
-        alert('Número/nome já existem')
+        alert('Number/name already exists')
     } else {
         contactName.push(inputContactName.value)
         contactNumber.push(inputContactNumber.value)

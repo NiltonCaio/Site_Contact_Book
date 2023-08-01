@@ -16,8 +16,8 @@
             <h1>Register contacts</h1>
         </header>
         <form id="form_contact">
-            <input type="text" id="contact_name" required placeholder="Contact's name">
-            <input type="tel" id="contact_number" required placeholder="+55 Number">
+            <input type="text" id="contact_name" maxlength="30" required placeholder="Contact's name">
+            <input type="tel" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="contact_number" required placeholder="(DDD)Number">
             <button type="submit">+ Register</button>
         </form>
         <table cellspacing="0">
